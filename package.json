@@ -2,7 +2,10 @@
   "name": "order-crud",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": {
+    "type": "git",
+    "url": "<Add your repository here>"
+  },
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -16,11 +19,16 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "cds": { 
+  "cds": {
     "requires": {
       "db": {
         "kind": "sqlite",
-        "credentials": {"url": "db/order-crud.sqlite"}
+        "credentials": {
+          "url": "db/order-crud.sqlite"
+        }
       }
-  }}
+    }
+  },
+  "main": "index.js",
+  "author": ""
 }

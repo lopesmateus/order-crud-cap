@@ -1,4 +1,4 @@
-using OrderCrud as my from '../db/schema';
+using OrderCrud as my from './db/schema';
 
 service entity {
     entity Item as projection on my.Item;
